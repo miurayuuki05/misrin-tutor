@@ -7,10 +7,13 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [menu, setMenu] = useState(true)
-    const [scroll, setScroll] = useState(false)
+    const [scroll, setScroll] = useState(true)
     
-    function handleMenu(){
-        setMenu(!menu)
+    const handleMenu = ()=>{
+        let size = window.innerWidth
+        if(size < 768){
+            setMenu(!menu)
+        }
     }
 
     useEffect(() => {
@@ -19,10 +22,12 @@ export default function Navbar() {
 
         function handleScroll(){
             currentPos = window.scrollY;
-            if(prevPos > currentPos){
-                setScroll(true)
-            }else{
+            if(prevPos < currentPos){
                 setScroll(false)
+                setMenu(false)
+            }else{
+                setScroll(true)
+                setMenu(false)
             }
             prevPos = currentPos;
         }
