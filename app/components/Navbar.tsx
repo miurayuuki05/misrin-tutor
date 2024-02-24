@@ -7,12 +7,28 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [menu, setMenu] = useState(true)
+    const [scroll, setScroll] = useState(false)
     
     function handleMenu(){
         setMenu(!menu)
     }
 
     useEffect(() => {
+        let prevPos = window.scrollY;
+        let currentPos = window.scrollY;
+
+        function handleScroll(){
+            currentPos = window.scrollY;
+            if(prevPos > currentPos){
+                setScroll(true)
+                setMenu(false)
+            }else{
+                setScroll(false)
+                setMenu(false)
+            }
+            prevPos = currentPos;
+        }
+
         let size = window.innerWidth;
 
         function handleResize(){
@@ -24,10 +40,11 @@ export default function Navbar() {
             }
         }
         window.addEventListener("resize", handleResize)
+        window.addEventListener("scroll", handleScroll)
     })
 
     return(
-        <nav className="h-20 bg-white fixed z-50 top-0 left-0 flex w-full justify-evenly">
+        <nav className={scroll ? "duration-200 h-20 bg-white fixed z-50 top-0 left-0 flex w-full justify-evenly" : "h-20 bg-white fixed z-50 top-[-100%] left-0 flex w-full justify-evenly duration-300"}>
             <div className="w-[40%] flex items-center justify-center">
                 <TbSquareLetterR className="text-5xl text-blue-500" />
                 <p className="text-xl font-bold text-green-600">MisRin&apos;s Bimbel</p>
