@@ -21,10 +21,8 @@ export default function Navbar() {
             currentPos = window.scrollY;
             if(prevPos > currentPos){
                 setScroll(true)
-                setMenu(false)
             }else{
                 setScroll(false)
-                setMenu(false)
             }
             prevPos = currentPos;
         }
