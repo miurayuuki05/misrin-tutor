@@ -17,7 +17,7 @@ export default function Sectionthree() {
         <Image className="w-full md:h-[500px] h-[600px] object-cover" src="/images/section3.jpg" alt="sectionthree" width={1000} height={600} />
         <div className="absolute top-0 left-0 z-10 w-full h-full bg-[#2d24af6e]">
             <div className="flex justify-center">
-            <div className="opacity-100 w-full md:w-[80%] mt-24">
+            <div className="opacity-100 w-[90%] md:w-[80%] mt-24">
                 <p className="text-sm text-neutral-400">Happy Clients Said About Our Service</p>
                 <h2 className="text-white text-4xl">Our  <span className="text-green-400">Testimonials</span></h2>
                 <Swiper
@@ -27,7 +27,7 @@ export default function Sectionthree() {
                     pagination={{ clickable: true }}
                     loop={true}
                     autoplay={{ delay: 2500, disableOnInteraction: false}}
-                    className="h-[300px] "
+                    className="md:h-[300px] h-[450px]"
                 >
                     <SwiperSlide>
                         <div>

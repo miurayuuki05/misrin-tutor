@@ -10,7 +10,7 @@ export default function Sectionthree() {
     <div className="flex justify-center bg-[#f0f0f0]">
     <div className="w-full">
         <div className="relative">
-        <Image className="w-full md:h-[500px] h-[600px] object-cover" src="/images/section3.jpg" alt="sectionthree" width={1000} height={600} />
+        <Image className="w-full md:h-[500px] h-[700px] object-cover" src="/images/section3.jpg" alt="sectionthree" width={1000} height={600} />
         <div className="absolute top-0 left-0 z-10 w-full h-full bg-[#2d24af6e]">
             <div className="flex justify-center">
             <div className="opacity-100 w-full md:w-[80%] mt-24 p-10">

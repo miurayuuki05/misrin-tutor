@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Location() {
    return(
     <div className="flex justify-center py-24">
-    <div className="w-full md:w-[80%]">
+    <div className="w-[90%] md:w-[80%]">
         <div>
             <p className="text-sm text-neutral-400">Where do we operate</p>
             <h2 className="text-blue-400 text-4xl">Our <span className="text-green-400">Location</span></h2>

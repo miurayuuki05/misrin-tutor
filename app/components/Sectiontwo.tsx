@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function Sectiontwo() {
    return(
     <div className="flex justify-center mt-24 bg-[#f0f0f0] pt-20 pb-32">
-    <div className="w-full md:w-[80%]">
+    <div className="w-[90%] md:w-[80%]">
         <div>
             <p className="text-sm text-neutral-400">Enjoy Online Lessons with Tutors</p>
             <h2 className="text-blue-400 text-4xl">Online <span className="text-green-400">Lessons</span></h2>
         </div>
         <div className="relative">
             <Image className="w-full h-[600px] object-cover" src="/images/section2.jpg" alt="sectiontwo" width={1000} height={600} />
-            <div className="absolute top-10 left-0 w-[40%] h-[90%] bg-white">
+            <div className="absolute top-10 left-0 md:w-[40%] w-[55%] h-[90%] bg-white">
                 <div className="flex justify-center items-center w-full h-full">
                     <div className=" p-5">
                         <p className="text-2xl text-green-400">Find Best</p>

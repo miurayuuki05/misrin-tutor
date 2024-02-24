@@ -10,6 +10,7 @@ import Sectionfive from "./components/Sectionfive";
 import News from "./components/News";
 import Testimonial from "./components/Testimonial";
 import Location from "./components/Location";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <News />
       <Testimonial />
       <Location />
+      <Footer />
     </main>
   );
 }

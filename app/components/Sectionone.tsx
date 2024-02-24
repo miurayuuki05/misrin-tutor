@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Sectionone() {
    return(
     <div className="flex justify-center my-24">
-    <div className="w-full md:w-[80%]">
+    <div className="w-[90%] md:w-[80%]">
         <div>
             <p className="text-sm text-neutral-400">We Provide the Best Tutoring Service</p>
             <h2 className="text-blue-400 text-4xl">Useful <span className="text-green-400">Information</span></h2>

@@ -1,7 +1,7 @@
 export default function Findtutor() {
   return (
     <div className="flex justify-center my-10">
-    <div className="bg-slate-800 w-full md:w-[80%] flex justify-between rounded-md">
+    <div className="bg-slate-800 w-[90%] md:w-[80%] flex justify-between rounded-md">
         <div className="w-[20%] flex items-center justify-center bg-slate-950 rounded-md">
             <p className="text-white">Find Your <span className="text-green-500 font-bold text-3xl"><br/>Tutor</span></p>
         </div>

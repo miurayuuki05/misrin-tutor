@@ -4,12 +4,14 @@ export default function Sectionfive() {
    return(
     <div className="flex justify-center mt-24 bg-[#f0f0f0] pt-20 pb-32">
     <div className="w-full">
-        <div className="flex justify-center mb-12">
-        <div className="w-full md:w-[80%]">
+        <div className="flex md:flex-row flex-col mx-auto justify-center mb-12 w-[90%] md:w-[80%]">
+        <div className="w-[80%]">
             <h2 className="text-blue-400 text-4xl">Want to become a tutor in <span className="text-green-400">Misrin&apos;s Bimbel?</span></h2>
             <p className="text-sm text-neutral-400">Misrin&apos;s Bimbel collaborate professional and talented tutors from all over the world! Join us right now!</p>
         </div>
-            <a className="p-4 text-white bg-green-600 rounded-full hover:bg-yellow-600 duration-200" href="#">Register Now</a>
+        <div className="md:w-[20%] w-full mt-5">
+            <a className="p-3  text-white bg-green-600 rounded-full hover:bg-yellow-600 duration-200" href="#">Register Now</a>
+        </div>
         </div>
         <div className="relative">
         <Image className="w-full md:h-[500px] h-[600px] object-cover" src="/images/section5.jpg" alt="sectionthree" width={1000} height={600} />
