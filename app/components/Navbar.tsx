@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 
 export default function Navbar() {
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(true)
     
     function handleMenu(){
         setMenu(!menu)
@@ -17,12 +17,10 @@ export default function Navbar() {
 
         function handleResize(){
             size = window.innerWidth;
-            if(size > 768){
-                setMenu(true)
-                console.log(size)
-            }else{
+            if(size < 768){
                 setMenu(false)
-                console.log(size)
+            }else{
+                setMenu(true)
             }
         }
         window.addEventListener("resize", handleResize)
@@ -35,12 +33,12 @@ export default function Navbar() {
                 <p className="text-xl font-bold text-green-600">MisRin&apos;s Bimbel</p>
             </div>
             <div className="w-[60%] flex items-center">
-                <ul className={menu ? "duration-200 flex md:flex-row flex-col w-[100%] justify-evenly fixed md:static top-0 left-0 bg-white md:p-0 p-32" : "md:p-0 p-32 fixed md:static left-0 top-[-100%] duration-200 w-[100%]"}>
-                    <a className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400 " href="#"><li>Home</li></a>
-                    <a className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>Find a Tutor</li></a>
-                    <a className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>Become a Tutor</li></a>
-                    <a className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>News</li></a>
-                    <a className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>About</li></a>
+                <ul className={menu ? "duration-200 flex md:flex-row flex-col w-[100%] justify-evenly fixed md:static top-0 left-0 bg-white md:p-0 p-32" : "md:p-0 p-32 fixed md:static left-0 top-[-500%] duration-200 w-[100%]"}>
+                    <a onClick={()=> handleMenu()} className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400 " href="#"><li>Home</li></a>
+                    <a onClick={()=> handleMenu()} className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>Find a Tutor</li></a>
+                    <a onClick={()=> handleMenu()} className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>Become a Tutor</li></a>
+                    <a onClick={()=> handleMenu()} className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>News</li></a>
+                    <a onClick={()=> handleMenu()} className="hover:text-amber-100 p-2 rounded-full md:text-base text-xl text-neutral-600 duration-200 hover:bg-green-400" href="#"><li>About</li></a>
                 </ul>
             </div>
             <div className="cursor-pointer flex items-center" onClick={()=> handleMenu()}>
