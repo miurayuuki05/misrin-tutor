@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 
 export default function Navbar() {
-    const [menu, setMenu] = useState(true)
+    const [menu, setMenu] = useState(false)
     const [scroll, setScroll] = useState(true)
     
     const handleMenu = ()=>{
