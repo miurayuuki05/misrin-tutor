@@ -102,7 +102,7 @@ export default function Page(){
                                 return
                             }else{
                             return(
-                                <div key={index} className="bg-slate-800 w-[300px] h-[300px] m-4 rounded-md">
+                                <div key={index} className="bg-slate-800 md:w-[30%] w-[90%] h-[300px] m-4 rounded-md">
                                     <img src={tutor.profileImages.url} alt="tutor" className="w-full h-[200px] object-cover rounded-t-md"/>
                                     <div className="p-4">
                                         <p className="text-white font-bold">{tutor.username}</p>
