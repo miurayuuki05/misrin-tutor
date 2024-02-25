@@ -18,41 +18,42 @@ export default function Page(){
         setSubject(e.target.value)    
     }
 
-    async function fetchTutors(){
-        let data = await getTutor()
-        if(gradeVal == 0 && subjectVal === "null"){
-            setExist(true)
-            setTutors(data)
-        }else{
-            let finalData : any = []
-            data.map(
-                (tutor : any) => {
-                    let inputs : string = "null"
-                    let grade = tutor.grades
-                    let subject = tutor.subject
-                    grade.map((grade : number) => {
-                        let gradeL : number = grade
-                        if(gradeL == gradeVal){
-                            inputs = "yes"
-                            finalData.push(tutor)
-                        }
-                    })
-                    if(inputs === "null"){
-                    subject.map((sub : string) => { 
-                        let subL = sub.toLowerCase()
-                        if(subL === subjectVal){
-                            finalData.push(tutor)
-                        }
-                    })
-                    }
-                }
-            )
-            console.log(finalData)
-            setTutors(finalData)
-        }
-        
-    } 
+     
     useEffect(() => {
+        async function fetchTutors(){
+            let data = await getTutor()
+            if(gradeVal == 0 && subjectVal === "null"){
+                setExist(true)
+                setTutors(data)
+            }else{
+                let finalData : any = []
+                data.map(
+                    (tutor : any) => {
+                        let inputs : string = "null"
+                        let grade = tutor.grades
+                        let subject = tutor.subject
+                        grade.map((grade : number) => {
+                            let gradeL : number = grade
+                            if(gradeL == gradeVal){
+                                inputs = "yes"
+                                finalData.push(tutor)
+                            }
+                        })
+                        if(inputs === "null"){
+                        subject.map((sub : string) => { 
+                            let subL = sub.toLowerCase()
+                            if(subL === subjectVal){
+                                finalData.push(tutor)
+                            }
+                        })
+                        }
+                    }
+                )
+                console.log(finalData)
+                setTutors(finalData)
+            }
+            
+        }
         fetchTutors()
 
     }, [gradeVal, subjectVal])
@@ -63,7 +64,7 @@ export default function Page(){
             <section className="mt-36">
                 <div className="container mx-auto">
                     <h1 className="text-4xl font-bold text-center">Find a Tutor</h1>
-                    <p className="text-center text-gray-600 mt-2">Find the perfect tutor for your child's needs</p>
+                    <p className="text-center text-gray-600 mt-2">Find the perfect tutor for your child&apos;s needs</p>
                     <div className="flex justify-center mt-8">
                         <form>
                             <select className="w-full border-2 border-gray-200 bg-gray-700 text-white p-3" name="subject" value={subjectVal} onChange={handleSubject} >
