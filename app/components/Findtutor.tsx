@@ -7,8 +7,13 @@ export default function Findtutor() {
         </div>
         <div className="w-[80%] p-5">
             <form className="flex justify-around">
-                <input className="text-white p-2 bg-slate-600 rounded-sm w-[40%]" type="text" name="subject" id="subject" placeholder="Enter Subject"/>
-                <select className="text-slate-300 px-3 p-2 bg-slate-600 rounded-sm w-[20%]" name="grade" id="grade">
+                <select className="text-slate-300 px-3 p-2 bg-slate-600 rounded-sm w-[30%]" name="subject" id="subject">
+                    <option value="grade">Subject</option>
+                    <option value="math">Math</option>
+                    <option value="english">English</option>
+                    <option value="science">Science</option> 
+                </select>
+                <select className="text-slate-300 px-3 p-2 bg-slate-600 rounded-sm w-[30%]" name="grade" id="grade">
                     <option value="grade">Grade</option>
                     <option value="grade">Grade</option>
                     <option value="grade">Grade</option>
