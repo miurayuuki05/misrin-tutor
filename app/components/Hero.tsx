@@ -32,7 +32,7 @@ export default function Hero() {
                     height={1080}
                 />
                 <div className="absolute flex items-center left-0 top-0 text-center p-3 w-full mx-auto h-[580px]">
-                    <div className="p-32 w-full">
+                    <div className=" w-full">
                         <h1 className="text-5xl font-bold text-white">Welcome to Misrin</h1>
                         <p className="text-xl font-semibold text-white">Learning made easy</p>
                         <div className="mt-10">
