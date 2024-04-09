@@ -4,7 +4,7 @@ import * as jwt from 'jsonwebtoken';
 import fs from 'fs';
 
 export async function POST(req, res){
-    const { username, password } = await req.json()
+    const { username, password } = await req.text()
 
     const prisma = new PrismaClient()
 
