@@ -35,7 +35,7 @@ export default async function submitForm(data){
     if(emailCount == 0){
     try{
         
-        await fetch("http://localhost:3000/api/otp", {
+        await fetch("https://misrintutor.vercel.app/api/otp", {
             method: 'POST',
             headers: new Headers({
                 'Content-Type': 'application/json',
