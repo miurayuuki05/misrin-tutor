@@ -14,6 +14,7 @@ export async function POST(req, res){
     let otpstring = '' + otp
     
     try{
+        console.log('sent')
         const data = await resend.emails.send({
             from: 'MisrinTutor <rina@mryk.tech>',
             to: [email],
