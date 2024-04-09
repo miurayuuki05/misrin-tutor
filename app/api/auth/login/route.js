@@ -3,12 +3,6 @@ import { bcrypt, bcryptVerify } from 'hash-wasm';
 import * as jwt from 'jsonwebtoken';
 import fs from 'fs';
 
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-}
-
 export async function POST(req, res){
     const { username, password } = await req.json()
 

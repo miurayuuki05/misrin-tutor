@@ -2,12 +2,6 @@ import { PrismaClient } from '@prisma/client';
 import { cookies } from 'next/headers';
 import * as jwt from 'jsonwebtoken';
 
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-}
-
 export async function POST(req, res){
     const prisma = new PrismaClient()
     const { token } = req.json()
