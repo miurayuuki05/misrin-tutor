@@ -6,11 +6,6 @@ const prisma = new PrismaClient();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-}
 
 export async function POST(req, res){
     let otp = Math.floor(Math.random() * (999999 - 100000) + 100000)

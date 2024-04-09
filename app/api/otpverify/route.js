@@ -3,12 +3,6 @@ import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
 
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-}
-
 export async function POST(req, res){
     let { email, otp } = await req.json()
 
