@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/otp/route.js", "app/api/otp/route.js", "app/api/otp/route.js", "app/api/otp/route.js", "app/register/component/Formpart.jsx", "app/register/component/Formpartclient.jsx", "app/register/component/Formpartclient.jsx", "app/register/otp/page.jsx", "app/register/otp/component/Otpclient.jsx", "app/middleware/submitRegister.js", "app/api/auth/login/route.js", "app/login/client/Clientlogin.jsx", "app/api/tutor/get/route.js", "app/dashboard/client/Clientcomp.js", "app/login/page.jsx", "app/dashboard/page.jsx", "app/components/Logoutadmin.jsx"],
   "exclude": ["node_modules"]
 }

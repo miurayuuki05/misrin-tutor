@@ -1,7 +1,7 @@
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://api-ap-northeast-1.hygraph.com/v2/clt0nthb70xmg08vw8r11un6p/master",
+  uri: process.env.HYGRAPH_API,
   cache: new InMemoryCache(),
 });
 
@@ -23,4 +23,15 @@ export default async function getTutor() {
     query: GET_TUTOR,
   });
   return data.usersAcc;
+}
+
+export async function postRegister(data: any) {
+  const res = await fetch(`${process.env.HYGRAPH_API}/register`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  return res;
 }

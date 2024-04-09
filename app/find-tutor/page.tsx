@@ -96,7 +96,7 @@ export default function Page(){
                 </div>
                 <div>
                     <h1 className="text-4xl font-bold text-center mt-8">Tutors</h1>
-                    <div className="flex justify-center mx-auto flex-wrap w-[90%] bg-green-100 rounded-md p-20">
+                    <div className="flex justify-center mx-auto flex-wrap w-full bg-green-100 rounded-md p-5">
                         {exist ? tutors && tutors.map((tutor : any, index : number) => {
                             if(tutor === undefined){
                                 return
@@ -129,7 +129,8 @@ export default function Page(){
                                     </div>
                                 </div>
                             )}
-                        }) : <div className="p-32 w-[90%] text-center animate-pulse bg-neutral-300"></div>}
+                        }) : <div className="p-32 w-[90%] text-center animate-pulse bg-neutral-300"></div>
+                        }
                     </div>
                 </div>
             </section>
