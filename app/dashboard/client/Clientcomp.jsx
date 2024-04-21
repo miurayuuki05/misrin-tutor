@@ -8,16 +8,17 @@ import Tutordashboard from "../component/Tutordash"
 
 // export default function DashboardClient({isAuth, Logoutadmin, userInfo})
 export default function DashboardClient(){
-    // const [user, setUser] = useState("")
-    // const router = useRouter()
-    // const [studentToggle, setStudentToggle] = useState(false)
-    // const [allToggle, setAllToggle] = useState(false)
+    const [user, setUser] = useState("")
+    const router = useRouter()
+    const [studentToggle, setStudentToggle] = useState(false)
+    const [allToggle, setAllToggle] = useState(false)
+    const [isAuth, setIsAuth] = useState(false)
     
-    // useLayoutEffect(() => {
-    //     if(!isAuth){
-    //         router.push('/login')
-    //     } 
-    // }, [])
+    useLayoutEffect(() => {
+        if(!isAuth){
+            router.push('/login')
+        } 
+    }, [])
 
     function handleLogout(){
         Logoutadmin().then(() => {
