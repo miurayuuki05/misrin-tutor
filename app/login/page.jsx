@@ -20,8 +20,7 @@ export default function Login() {
                 if(data.message){
                     return data
                 }
-                cookies().set('token', data.token, {expires : Date.now() + 1000 * 60 * 60 * 24 * 30})
-                cookies().set('user', data.user.id, {expires : Date.now() + 1000 * 60 * 60 * 24 * 30})
+                
                 redirect('/dashboard')
             }
         )
