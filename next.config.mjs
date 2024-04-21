@@ -16,7 +16,9 @@ const nextConfig = {
         VERCEL_ENV: "development",
         RESEND_API_KEY: "re_HyyuPTpj_LHZb5udEpk3p2gdua51M5wuN",
         BLOB_READ_WRITE_TOKEN: "vercel_blob_rw_uJfE949zmxk2BM3a_HejE8MjRGcKZelqVrFJj0SY9ucG0GY",
-        JWT_SECRET : "I care more about others than I do myself, and I wont let anyone hurt them. When you have something special you want to protect, only then can you become truly strong. Rejection is a part of any mans life. Wake up to reality, nothing ever goes as planned. The longer you live, the more you will realize that the only thing that truly exist in this reality are merely pain, suffering, and futility. When people are protecting something truly special to them, they can become as strong as they can be. IF YOU DONT LIKE THE HAND THAT FATES DEALT YOU WITH, FIGHT FOR A NEW ONE. THE MOMENT PEOPLE COME TO KNOW LOVE, THEY RUN THE RISK OF CARRYING HATE."
+        JWT_SECRET : "I care more about others than I do myself, and I wont let anyone hurt them. When you have something special you want to protect, only then can you become truly strong. Rejection is a part of any mans life. Wake up to reality, nothing ever goes as planned. The longer you live, the more you will realize that the only thing that truly exist in this reality are merely pain, suffering, and futility. When people are protecting something truly special to them, they can become as strong as they can be. IF YOU DONT LIKE THE HAND THAT FATES DEALT YOU WITH, FIGHT FOR A NEW ONE. THE MOMENT PEOPLE COME TO KNOW LOVE, THEY RUN THE RISK OF CARRYING HATE.",
+        PROD_DOMAIN : "misrintutor.vercel.app",
+        DEV_DOMAIN : "localhost:3000",
     }
 };
 

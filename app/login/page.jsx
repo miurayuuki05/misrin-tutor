@@ -6,7 +6,7 @@ export default function Login() {
 
     async function handleLogin(username, password){
         "use server"
-        const resp = await fetch('http://localhost:3000/api/auth/login', {
+        const resp = await fetch('https://' + process.env.PROD_DOMAIN + '/api/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
