@@ -18,7 +18,7 @@ export default function About(){
                                 With our team of passionate and dedicated educators, we strive to ignite a love for learning in every child. Through hands-on projects, creative exercises, and personalized guidance, we empower children to explore their interests, develop critical thinking skills, and unlock their full potential.
                             </p>
                             <p className="text-center text-lg text-gray-800 mt-4">
-                                At Pelangi Bimbel, we understand that every child is unique. That's why we tailor our curriculum to cater to individual learning styles and abilities. Whether your child is a visual learner, an auditory learner, or a kinesthetic learner, we have the resources and teaching methods to ensure their success.
+                                At Pelangi Bimbel, we understand that every child is unique. That&aposs why we tailor our curriculum to cater to individual learning styles and abilities. Whether your child is a visual learner, an auditory learner, or a kinesthetic learner, we have the resources and teaching methods to ensure their success.
                             </p>
                             <p className="text-center text-lg text-gray-800 mt-4">
                                 Join us at Pelangi Bimbel and give your child the gift of joyful learning. Together, we can inspire a lifelong love for knowledge and set them on the path to success.
