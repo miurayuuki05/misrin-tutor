@@ -31,23 +31,23 @@ export default async function Page(){
 
     async function logout(){
         "use server"
-        const cookie = cookies().get('token')?.value || ''
-        const user = cookies().get('user')?.value || ''
-        const userId = user.toString()
-        const cookieString = cookie.toString() 
-        const userString = user.toString()
+        // const cookie = cookies().get('token')?.value || ''
+        // const user = cookies().get('user')?.value || ''
+        // const userId = user.toString()
+        // const cookieString = cookie.toString() 
+        // const userString = user.toString()
 
-        const admin = await prisma.admin_jwt.delete({
-            where: {
-                id: parseInt(userId),
-                jwt: cookieString
-            }
-        }).then(() => {
-            cookies().delete('token')
-            cookies().delete('user')
-        }).catch((err) => {
-            console.log(err)
-        })
+        // const admin = await prisma.admin_jwt.delete({
+        //     where: {
+        //         id: parseInt(userId),
+        //         jwt: cookieString
+        //     }
+        // }).then(() => {
+        //     cookies().delete('token')
+        //     cookies().delete('user')
+        // }).catch((err) => {
+        //     console.log(err)
+        // })
     }
 
     return(
