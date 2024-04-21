@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation"
 import Studentdashboard from "../component/Studentdash"
 import Tutordashboard from "../component/Tutordash"
 
-export default function DashboardClient({isAuth, Logoutadmin, userInfo}){
+// export default function DashboardClient({isAuth, Logoutadmin, userInfo})
+export default function DashboardClient(){
     const [user, setUser] = useState("")
     const router = useRouter()
     const [studentToggle, setStudentToggle] = useState(false)
