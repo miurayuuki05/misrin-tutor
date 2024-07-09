@@ -19,6 +19,13 @@ const nextConfig = {
         JWT_SECRET : "I care more about others than I do myself, and I wont let anyone hurt them. When you have something special you want to protect, only then can you become truly strong. Rejection is a part of any mans life. Wake up to reality, nothing ever goes as planned. The longer you live, the more you will realize that the only thing that truly exist in this reality are merely pain, suffering, and futility. When people are protecting something truly special to them, they can become as strong as they can be. IF YOU DONT LIKE THE HAND THAT FATES DEALT YOU WITH, FIGHT FOR A NEW ONE. THE MOMENT PEOPLE COME TO KNOW LOVE, THEY RUN THE RISK OF CARRYING HATE.",
         PROD_DOMAIN : "misrintutor.vercel.app",
         DEV_DOMAIN : "localhost:3000",
+        FIREBASE_API_KEY : "AIzaSyDRuaS7pPPqZVxtk5ayW2BKbG7uaoRMXcI",
+        FIREBASE_AUTH_DOMAIN : "apt-decorator-360923.firebaseapp.com",
+        FIREBASE_PROJECT_ID : "apt-decorator-360923",
+        FIREBASE_STORAGE_BUCKET : "apt-decorator-360923.appspot.com",
+        FIREBASE_MESSAGING_SENDER_ID : "903455471568",
+        FIREBASE_APP_ID : "1:903455471568:web:d8635160c36bcdf864abd5",
+        FIREBASE_MEASUREMENT_ID : "G-M5H7D6JJ6L"
     }
 };
 

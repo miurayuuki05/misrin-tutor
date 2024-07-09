@@ -33,10 +33,10 @@ export default function Hero() {
                 />
                 <div className="absolute flex items-center left-0 top-0 text-center p-3 w-full mx-auto h-[580px]">
                     <div className=" w-full">
-                        <h1 className="text-5xl font-bold text-white">Welcome to Misrin</h1>
+                        <h1 className="text-5xl font-bold text-black">Welcome to Pelangi Bimbel</h1>
                         <p className="text-xl font-semibold text-white">Learning made easy</p>
                         <div className="mt-10">
-                            <a href="#" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
+                            <a href="/register" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -52,10 +52,10 @@ export default function Hero() {
                 />
                 <div className="absolute flex items-center left-0 top-0 text-center p-3 w-full mx-auto h-[580px]">
                     <div className="p-32 w-full">
-                        <h1 className="text-5xl font-bold text-white">Welcome to Misrin</h1>
+                        <h1 className="text-5xl font-bold text-[#f2f7b7]">Welcome to Pelangi Bimbel</h1>
                         <p className="text-xl font-semibold text-white">Learning made easy</p>
                         <div className="mt-10">
-                            <a href="#" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
+                            <a href="/register" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -70,10 +70,10 @@ export default function Hero() {
                 />
                 <div className="absolute flex items-center left-0 top-0 text-center p-3 w-full mx-auto h-[580px]">
                     <div className="p-32 w-full">
-                        <h1 className="text-5xl font-bold text-white">Welcome to Misrin</h1>
+                        <h1 className="text-5xl font-bold text-[#464646]">Welcome to Pelangi Bimbel</h1>
                         <p className="text-xl font-semibold text-white">Learning made easy</p>
                         <div className="mt-10">
-                            <a href="#" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
+                            <a href="/register" className="bg-green-600 text-black p-3 font-bold rounded-full hover:bg-green-300 hover:text-blue-950 duration-200">Get Started</a>
                         </div>
                     </div>
                 </div>

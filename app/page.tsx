@@ -11,11 +11,13 @@ import News from "./components/News";
 import Testimonial from "./components/Testimonial";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
+import Floatcontact from "./components/Whatssapp";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
+      <Floatcontact />
       <Hero />
       <Sectionone />
       <Sectiontwo />

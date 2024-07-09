@@ -3,6 +3,8 @@ import Formpart from "./Formpartclient"
 import { cookies } from "next/headers"
 import { redirect } from 'next/navigation'
 
+
+
 export default function Formpartserver(){
     
     async function handleSubmit(studentName: string, studentGrade: string, subject: string, parentName: string, parentPhone: string,address: string, email: string, password: string,  honeypot: string){
@@ -22,8 +24,11 @@ export default function Formpartserver(){
             return
         }else{
             cookies().set('email', data.email)
-            submitForm(data)
-            redirect('/register/otp')
+            let datasub = await submitForm(data)
+            if(datasub === 'Email already exists'){
+                redirect('/register/email-exist')      
+            }
+            redirect('/register/success-register')
         }
     }
     return(

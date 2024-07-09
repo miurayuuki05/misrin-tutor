@@ -10,7 +10,7 @@ export default function Sectionfive() {
             <p className="text-sm text-neutral-400">Misrin&apos;s Bimbel collaborate professional and talented tutors from all over the world! Join us right now!</p>
         </div>
         <div className="md:w-[20%] w-full mt-5">
-            <a className="p-3  text-white bg-green-600 rounded-full hover:bg-yellow-600 duration-200" href="#">Register Now</a>
+            <a className="p-3  text-white bg-green-600 rounded-full hover:bg-yellow-600 duration-200" href="/register">Register Now</a>
         </div>
         </div>
         <div className="relative">

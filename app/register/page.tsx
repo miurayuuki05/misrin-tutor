@@ -12,7 +12,7 @@ export default function Register(){
                     <h1 className="text-4xl font-bold text-center">Register as Student</h1>
                     <p className="text-center text-gray-600 mt-2">Register to get the best tutor for your child</p>
                 </div> 
-                <div className="w-[90%] bg-neutral-300 mx-auto p-5">
+                <div className="mt-10 md:w-[40%] w-[90%] bg-neutral-300 mx-auto p-5">
                     <Formpart />     
                 </div>
             </section>

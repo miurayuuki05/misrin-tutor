@@ -34,15 +34,6 @@ export default async function submitForm(data){
 
     if(emailCount == 0){
     try{
-        
-        await fetch("https://misrintutor.vercel.app/api/otp", {
-            method: 'POST',
-            headers: new Headers({
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }),
-            body: JSON.stringify({ email: data.email })
-        })
 
         await prisma.studentdata.create({
             data: {
@@ -57,12 +48,12 @@ export default async function submitForm(data){
             }
         })
         
-        
+        return 'Success'
     } catch(e){
         console.log(e)
     }
     }else{
-        console.log(emailCount)
         console.log('Email already exists')
+        return 'Email already exists';
     }
 }

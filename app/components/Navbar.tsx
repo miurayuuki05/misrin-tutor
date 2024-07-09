@@ -45,7 +45,7 @@ export default function Navbar() {
         <nav className={scroll ? "duration-200 h-20 bg-white fixed z-50 top-0 left-0 flex w-full justify-evenly" : "h-20 bg-white fixed z-50 top-[-100%] left-0 flex w-full justify-evenly duration-300"}>
             <div className="w-[40%] flex items-center justify-center">
                 <TbSquareLetterR className="text-5xl text-blue-500" />
-                <p className="text-xl font-bold text-green-600">MisRin&apos;s Bimbel</p>
+                <p className="text-xl font-bold text-green-600">Pelangi Bimbel</p>
             </div>
             <div className="w-[60%] flex items-center">
                 <ul className={menu ? "duration-200 flex md:flex-row flex-col w-[100%] justify-evenly fixed md:static top-0 left-0 bg-white md:p-0 p-32" : "md:p-0 p-32 fixed md:static left-0 top-[-500%] duration-200 w-[100%] flex md:flex-row flex-col justify-evenly"}>
